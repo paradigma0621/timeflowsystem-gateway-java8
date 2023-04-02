@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: gateway-java8
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          #lower-case-service-id: true  #This one allow to call the endpoint using lower case for the microservice name
+    config:
+      uri: ${CONFIG_SERVER_URL:http://localhost:8888}
+  config:
+    import: "optional:configserver:"
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka          
+
+          
+          
+
