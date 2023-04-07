@@ -9,6 +9,6 @@ Runs on port 8765.
 
 2023-04-02 - Connected Gateway with Config Server and Eureka Server Microservices. Once it gets the configuration from https://github.com/mselucas/configRepo/blob/master/gateway-java8.properties
 
-For a test, up the microservices api-java17 and report-java8 and access the endpoint:
-	http://localhost:8765/API-JAVA17/persons/getNameSaudation
+2023-04-07 - Unified Config + Eureka + Report + Gateway (See specific branch inside all their repositories: "2023-04-07-Config+Eureka+Report+Gateway"). For a test, up the microservices report-java8 and access the endpoint:
+	http://localhost:8765/persons/getPersonMsg
 
