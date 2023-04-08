@@ -1,14 +1,14 @@
 spring:
   application:
     name: gateway-java8
-  cloud:
+  #cloud:
    # gateway: # essas linhas foram comentadas para que o load balancer do Eureka atribua automaticamente qual microserviço
      # discovery: # atuará (caso queiramos subir mais de uma instância do mesmo microserviço, por exemplo)
        # locator:
          # enabled: true
          # lower-case-service-id: true  #This one allow to call the endpoint using lower case for the microservice name
-    config:
-      uri: ${CONFIG_SERVER_URL:http://localhost:8888}
+    #config:
+      #uri: ${CONFIG_SERVER_URL:http://localhost:8888}
   config:
     import: "optional:configserver:"
 eureka:
